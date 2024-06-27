@@ -4,9 +4,10 @@ import json
 import random
 import string
 
-"""
+
 # https://github.com/dwyl/english-words/blob/master/words_alpha.txt
 # Read words from the text file
+"""
 with open('words_alpha.txt', 'r') as file:
     word_list = file.read().splitlines()
 
@@ -14,7 +15,6 @@ with open('words_alpha.txt', 'r') as file:
 with open('words.json', 'w') as json_file:
     json.dump(word_list, json_file, indent=2)
 """
-
 
 window = customtkinter.CTk()
 window.title("Password Generator")
